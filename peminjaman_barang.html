@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Peminjaman Barang</title>
+</head>
+<body>
+    <h2>Form Peminjaman Barang</h2>
+    <form action="send_email.php" method="post">
+        <label for="barang_name">Nama Barang:</label><br>
+        <input type="text" id="barang_name" name="barang_name" required><br><br>
+
+        <label for="barang_qty">Jumlah Barang:</label><br>
+        <input type="number" id="barang_qty" name="barang_qty" required><br><br>
+
+        <label for="peminjam_name">Nama Peminjam:</label><br>
+        <input type="text" id="peminjam_name" name="peminjam_name" required><br><br>
+
+        <label for="tanggal_pinjam">Tanggal Pinjam:</label><br>
+        <input type="date" id="tanggal_pinjam" name="tanggal_pinjam" required><br><br>
+
+        <label for="tanggal_kembali">Tanggal Kembali:</label><br>
+        <input type="date" id="tanggal_kembali" name="tanggal_kembali" required><br><br>
+
+        <label for="receiver_email">Email Tujuan:</label><br>
+        <input type="email" id="receiver_email" name="receiver_email" required><br><br>
+
+        <input type="submit" value="Kirim Data">
+    </form>
+</body>
+</html>
